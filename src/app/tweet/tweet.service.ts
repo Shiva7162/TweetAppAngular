@@ -10,7 +10,7 @@ import { Tweet } from "./tweet.model";
 export class TweetService{
 
     constructor(private http: HttpClient){}
-    apiurl = 'http://localhost:40080/api/v1.0/tweets/';
+    apiurl = 'https://comtweetapp20220923173543.azurewebsites.net/api/v1.0/tweets/';
     tweetChanged = new Subject<Tweet>();
     allTweets = new Subject<Tweet[]>();
 

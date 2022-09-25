@@ -8,7 +8,7 @@ import { ViewUser } from "./view-user.model";
 export class UserService{
 
     constructor(private http: HttpClient){}
-    apiurl = 'http://localhost:40080/api/v1.0/tweets/';
+    apiurl = 'https://comtweetapp20220923173543.azurewebsites.net/api/v1.0/tweets/';
     userDetail = new Subject<ViewUser>();
     allUsers = new Subject<ViewUser[]>();
 
